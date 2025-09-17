@@ -13,8 +13,8 @@ export class TodoList extends Component {
     this.todoListElement = null
   }
 
-  update(todo) {
-    this.state.todos = todo
+  update(todos) {
+    this.state.todos = todos
     this.todoListElement.innerHTML = ""
 
     const ul = document.createElement('ul')
